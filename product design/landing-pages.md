@@ -35,7 +35,7 @@ Landing pages are intended to promote a single action — create an account, sig
 
 Landing pages are also important tools for tracking, researching, getting to know your customers better. Aside from lead generating, they collect the demographics of your target audience. Your visitors fill out lead-capture forms (a.k.a. conversion forms) sharing some information in exchange for some data, service or some sort of access. Demographics data allow you to set up better targetting for your next marketing campaign. Contact information gives your opportunity to contact your leads and convert them into customers.
 
-# 
+#
 
 # **What Is Landing Page Optimization?**
 
@@ -47,7 +47,7 @@ LPO refers to enhancing elements of the landing page to increase its conversion.
 2. generate hypothesis and create variations
 3. run the experiment and see if your page performs better.
 
-# 
+#
 
 # **Landing Page Optimization Tips**
 
@@ -115,7 +115,7 @@ Your landing page should match the needs and expectations of its visitors. My ad
 
 # “Call-to-action targetted to the user had a 42% higher view-to-submission rate than calls-to-action that were the same for all visitors” — Hubspot
 
-# 
+#
 
 # **Landing Page Optimization Tools**
 

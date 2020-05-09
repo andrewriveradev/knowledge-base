@@ -2,11 +2,15 @@ topics:
 
 - typography and geometric progression [https://type-scale.com/](https://type-scale.com/) [https://www.modularscale.com/](https://www.modularscale.com/)
 - do something with this: Darker color variations are made by lowering brightness and increasing saturation. Brighter color variations are made by increasing brightness and lowering saturation.
+- serif vs san serif
+- rule: use one or two fonts but not more. Learn Font pairing
 
 - More spacing than you think you need
 - Vertical rhythm
 - Letter spacing: -1px
 - Consistent margin and padding
+- line length 50-60 characters
+- what is text lockup? https://css-tricks.com/snippets/svg/text-lock-up/
 
 # **Importance is not by font size, but by font weight**
 
@@ -70,6 +74,40 @@ from my base color, I move from darker for headlines to lighter for ancillary co
 3 approaches, using vw units
 
 [https://medium.com/sketch-app-sources/truly-fluid-typography-257a2b434105](https://medium.com/sketch-app-sources/truly-fluid-typography-257a2b434105)
+
+# Another way to create Responsive Typography
+It appears that by using calc() and vw we can get responsive typography that scales perfectly between specific pixel values within a specific viewport range.
+
+The problem with the common approach to responsive typography is that it is jumpy and requires a lot of media queries.
+
+Viewport units are fluid but lack precise control over font-size.
+
+Typically you might use a table like this to work out the range of font sizes across different resolutions.
+
+Viewport units:	1vw	2vw	3vw	4vw	5vw
+Viewport size	font-size in pixels
+400px	4px	8px	12px	16px	20px
+500px	5px	10px	15px	20px	25px
+600px	6px	12px	18px	24px	30px
+700px	7px	14px	21px	28px	35px
+800px	8px	16px	24px	32px	40px
+900px	9px	18px	27px	36px	45px
+1000px	10px	20px	30px	40px	50px
+1100px	11px	22px	33px	44px	55px
+1200px	12px	24px	36px	48px	60px
+Looking at the table you can see there are many limitations. There is no way to scale between 16px and 36px for example over the given viewport sizes. That is a shame because this is the type of control designers expect (and should expect).
+
+Imagine you want the smallest font-size to be 12 pixels and then once the device width is greater than 400px you want the font-size to gradually increase to 24px and stop scaling by the time the viewport reaches 800px. That is exactly what this demo does!
+
+This is achieved by using viewport units in combination with calc().
+
+More details here: https://madebymike.com.au/writing/precise-control-responsive-typography/
+
+Get the SCSS mixin: https://codepen.io/MadeByMike/pen/vNrvdZ
+
+See all examples in the collection: https://codepen.io/collection/nLbRMZ
+
+Read about it on Smashing: https://www.smashingmagazine.com/2016/05/fluid-typography/
 
 # Resources on Typography
 
